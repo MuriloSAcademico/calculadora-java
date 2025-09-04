@@ -1,4 +1,4 @@
-// Crie os testes para as seguintes operações:
+package calculadora;// Crie os testes para as seguintes operações:
 //Subtração
 //Multiplicação
 //Divisão
@@ -35,20 +35,24 @@ public class Calculadora {
 
     }
 
-    public int subtracao (int a, int b) {
+    public double soma (double a, double b) {
+        return a + b;
+    }
+
+    public double subtracao (double a, double b) {
         return a - b;
     }
-    public int multiplicacao (int a, int b) {
+    public double multiplicacao (double a, double b) {
         return a * b;
     }
-    public int divisao (int a, int b) {
+    public double divisao (double a, double b) {
         if (b == 0) {
             System.out.println(" Erro: não é possível dividir por zero!");
             return 0;
         }
         return a / b;
     }
-    public int potenciacao (int a, int b) {
+    public double potenciacao (double a, double b) {
         return (int) Math.pow(a, b);
     }
 }
